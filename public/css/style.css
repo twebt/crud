@@ -1,0 +1,131 @@
+/**
+ * CRUD STYLESHEET
+*/
+
+body, html {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.page-wrap {
+	padding: 20px;
+	padding-top: 50px;
+}
+table tr {
+	transition: 0.3s all ease-in-out;
+}
+.app-heading {
+	position: relative;
+	margin-bottom: 7px;
+}
+.app-heading:before {
+	content: "";
+	position: absolute;
+	top: -49px;
+	left: 0;
+	width: 74px;
+	height: 56px;
+	background: url('../img/php-logo.png') no-repeat;
+}
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.alert-danger {
+	margin-top: 10px;
+	box-shadow: none;
+	padding: 8px 10px;
+}
+.alert-success {
+	padding: 8px 10px;
+}
+.required span {
+	color: #a94442;
+}
+#messageModal .modal-title-success {
+	color: #419641;
+}
+#messageModal .modal-title-errors {
+	color: #c12e2a;
+}
+.btn {
+	box-shadow: none !important;
+	border: none !important;
+	background-image: none;
+	transition: 0.3s all ease-in-out;
+}
+
+/**
+ * Helpers
+*/
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+.float-right {
+	float: right;
+}
+.float-right.btn {
+	position: relative;
+	top: 25px;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity:0
+	}
+	100% {
+		opacity:1
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity:0
+	}
+	100% {
+		opacity:1
+	}
+}
+.fadeIn {
+	-webkit-animation-name:fadeIn;
+	animation-name:fadeIn;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:none;
+		transform:none
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:none;
+		transform:none
+	}
+}
+.fadeInUp {
+	-webkit-animation-name:fadeInUp;
+	animation-name:fadeInUp;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
