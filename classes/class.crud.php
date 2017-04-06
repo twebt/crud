@@ -19,7 +19,7 @@ class Crud {
 	 * pass
 	 * @var protected
 	*/
-	protected $pass	= '00244600';
+	protected $pass	= '';
 
 	/**
 	 * db
